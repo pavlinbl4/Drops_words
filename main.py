@@ -13,8 +13,8 @@ def get_topics(url):
 
 if __name__ == '__main__':
     words_set = {}
-    # url = 'https://languagedrops.com/word/en/english/hebrew/'
-    url = 'https://languagedrops.com/word/en/english/russian/'
+    url = 'https://languagedrops.com/word/en/english/hebrew/'
+    # url = 'https://languagedrops.com/word/en/english/russian/'
     for topic in get_topics(url):
         topic_name = topic.text.lower().replace(' ', '_')
         get_topic_words(topic_name, words_set)
